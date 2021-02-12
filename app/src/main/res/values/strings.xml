@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BTCHAT</string>
+    <string name="user_name">Type Your Username</string>
+    <string name="okay">확인</string>
+    <string name="wait">잠시만 기다려주세요..</string>
+    <string name="developer">16102402 박민수 16100445 최지원\n본 앱은 모바일 프로그래밍2 강의에서 진행한 프로젝트로 제작되었습니다.\n개발자 이메일 (jae2021@gmail.com)</string>
+</resources>

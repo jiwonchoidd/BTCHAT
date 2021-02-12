@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nsu.btchat">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 블루투스 퍼미션 참조 https://lcw126.tistory.com/92 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 클라이언트 주변기기를 탐색할때 필요로하는 퍼미션 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BTCHAT"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserNameActivity"
+            android:label="이름 입력" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="메뉴화면" />
+        <activity
+            android:name=".HostActivity"
+            android:label="BTCHAT" />
+        <activity
+            android:name=".GuestActivity"
+            android:label="BTCHAT" />
+        <activity
+            android:name=".BTDevicesListActivity"
+            android:label="기기 탐색중"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".MyAdapter" />
+        <activity android:name=".MyPaintView" />
+        <activity android:name=".second" />
+    </application>
+</manifest>
