@@ -1,0 +1,7 @@
+<application>
+  <component name="IntentionManagerSettings">
+    <ignoreAction name="Android/Override Resource in Other Configuration..." />
+    <ignoreAction name="Java/Annotations/Edit method contract" />
+    <ignoreAction name="Java/Imports/Add Single-Member Static Import" />
+  </component>
+</application>
