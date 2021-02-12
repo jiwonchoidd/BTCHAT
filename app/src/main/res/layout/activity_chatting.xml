@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/tv"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/abc"
+       android:orientation="vertical"
+       android:visibility="invisible">
+
+
+
+   </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/chatgone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+            <ListView
+                android:id="@+id/myList"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:transcriptMode="alwaysScroll">
+
+            </ListView>
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:id="@+id/ssss"
+                android:visibility="gone"></ImageView>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:id="@+id/eeee"
+                android:text="뒤로가기">
+
+            </Button>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <SeekBar
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/seekBar"
+                    android:max="3"
+                   />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:textSize="10dp"
+                    android:id="@+id/result">
+                </TextView>
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/colorName"
+                    android:textSize="7dp"></TextView>
+
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btn_start"
+                    android:text="알림"
+                    android:textSize="7dp"/>
+
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btn_end"
+                    android:text="종료"
+                    android:textSize="7dp"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/addBtn"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="전송"
+                    android:soundEffectsEnabled="false"></Button>
+
+                <Button
+                    android:id="@+id/delBtn"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="지우기"></Button>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#cccccc"></View>
+
+    <LinearLayout
+        android:id="@+id/pic"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
